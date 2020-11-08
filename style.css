@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@600&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body {
+    background-color: #38424a;
+}
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: #242b2b;
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+
+}
+
+.nav {
+    height: auto;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.navicon {
+    border-bottom: ivory 2px solid;
+    color: #ece6e6;
+    margin: 10px;
+    transition: 1s background-color ease-in-out;
+    background-color: #242b2b;
+}
+
+.navicon_nov {
+    border-bottom: ivory 2px solid;
+    color: #ece6e6;
+    margin: 10px;
+    transition: 1s background-color ease-in-out;
+    background-color: #638da4;
+}
+
+.logo {
+    position: fixed;
+    right: 5%;
+    top: 0px;
+    color: azure;
+    font-size: 32pt;
+    font-family: 'Fredoka One', cursive;
+    transition: opacity 1s ease-in-out;
+}
+
+.navicon:hover {
+    background-color: #6196b7;
+}
+
+.fat {
+    width: 70%;
+    height: 600px;
+    background-image: url("images/americ.jpeg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 2px #242b2b;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    color: #d2dce5;
+    font-family: 'Sacramento', cursive;
+    font-size: 100pt;
+    text-shadow: #242b2b 4px 4px 4px;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.fat0 {
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+}
+
+.infom {
+    margin: 10%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #e7e2b5;
+    color: #38424a;
+    font-family: 'Open Sans', sans-serif;
+    overflow: auto;
+    font-size: 15.2pt;
+
+}
+
+.infom1 {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.infom2 {
+    margin: 10px;
+}
+
+.image1 {
+    height: 250px;
+    margin: 20px;
+}
+
+.image2 {
+    height: 500px;
+    margin: 30px;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 900px) {
+    .infom {
+        font-size: 12pt;
+        margin: 0px;
+    }
+
+    .ing1 {
+        height: 250px;
+    }
+
+    .image2 {
+        height: 250px;
+    }
+
+    .logo {
+        opacity: 0;
+    }
+
+    .img {
+        flex-direction: column;
+    }
+    .fat {
+        width: 100%;
+    }
+
+    .nav {
+        font-size: 10pt;
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .infom1 {
+       flex-direction: column;
+    }
+
+    .img {
+        flex-direction: row;
+    }
+
+    .fat {
+        font-size: 50pt;
+    }
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #ece6e6;
+}
